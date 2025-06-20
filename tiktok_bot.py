@@ -296,7 +296,7 @@ class TikTokBot:
 def main():
     """الدالة الرئيسية"""
     # الحصول على التوكن من متغير البيئة
-    token = "8138519590:AAHOAhelbbtpOqCaCoKEPOW77Q1IbzgVytY"
+    token = os.getenv("BOT_TOKEN")
     
     if not token:
         print("❌ يرجى تعيين متغير BOT_TOKEN")
